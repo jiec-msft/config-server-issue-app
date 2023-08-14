@@ -1,0 +1,43 @@
+spring:
+  cloud:
+    config:
+      fail-fast: true
+      server:
+        git:
+          uri: git@ssh.dev.azure.com:v3/chenjieecnu/config-server-ssh/config-server-ssh
+          label: master
+          clone-on-start: true
+          privateKey: |-
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIEpQIBAAKCAQEAno9eP/UPi7H/JnfTTpw8S6V4z8tXAw6EZ5OG07hdLYto4ICt
+            mRrm952OOEtk+hJC6d5BWmOQUEKsQDwABCjD4ro/6rYLO10tEhwymlS+hRdpjp/Z
+            qKcmApN4zwsNOIkSecVpkTivtNoJ2TyXQcaAyUENNRxoyvC74EJ/U+ZcRCsXycEW
+            6sM3ZGg1PF+pdiiRRFxfn3etHWPVQK97fFL/pf8qSQigF2VKLHDmcUcvxwHis8P9
+            Cq3vr+9gbxDzAHS0QIfXtljusi5aiZ3GFCN8trX+W9IhitaMSyCf62MNurdp0ABo
+            sh+ufv8nSiTaB3jACMzJyypR3PN0VNLMlXwdKwIDAQABAoIBAGJXW0ZhsLWcvTpX
+            oTglUIQ+afK/FAVyUI6JAlt4AlqIF5D+Xi0ScWPsVVP29vbesp+oWHI+RDhzUbA5
+            Rm1N90g86f2h0M+N17FeycfMfanAPpjV7cJbgQih/JC1Mwr4gPwDg5ktRlTt0qPo
+            n4uNGT05Wn6xUxFjQ7MwqxYXTux7rQnrNSS5EzteCDyYqS81aMVAwjlqhH4iTDTo
+            q8ROAfK1X7+CcRGycQ8SfpH0RDpH2o0QJqT/wkeu+WcDVKWgKAVSh0scn6icod0r
+            sYt4UcpHVtkQobLE30BUGHNOKH1mjnGTtaRjIdDMgwPQ9btd9lxVpA8qE3bZkWRK
+            6C3gahkCgYEA6Zq2WLP8+Vi3DqhQSuxwRgasE2oQ9SxY5fpGIILHnKmsF9ZeKdXz
+            b3g4M1kyLbXmIYZtDyn8Wp79D35pSuOuUZBe0EHm1KLnIU44Devem9v7hxqzjslv
+            i9X41+beMPqdBgOx4KEo81p4s24wlyeu2hXcPdovCVV98bHfGppnyB0CgYEArcLd
+            IBMgJ5vka4HlmfsDX7/zEuAp/Hrg6VJveQ+jxXvdqNQ8OnxMKvhroOVdQLReM26V
+            cKHXlVwDKCWsmlUWdk3EeCZHuR+roBTpin0RYhnPQu7rZwgGpYfCBH79EdV0FRvB
+            tdWK2V/Go1HfyFXzI90vlqMEJanFYbK9TTfox+cCgYEAwWwQv7GILQ1/xOsoUGEl
+            NVYg9JJGKDroAMQRfKnMjbMPg01D+m/keM+Z+SpJmf+a5PdhJcUl5gLulf2dQRz0
+            ISTg3J80eavIpJMXZq9+Sp8CzQMW2YuAiNBKkrneD7/ydCBrEAtg1N58QlVidkWt
+            SXYAPlaBy8C134HfsS9X7yECgYEAjzhojsF05XDnC33bw9lT5J4QOmSt9r9Jlsct
+            vnkXofUAtOGKayJ8nYZ5H/stq+F/K6FgZ5/eU+utZm/3HpY3l3duEyJqR7pE+gOC
+            o3WG2HcxkJfhS+EfqVyGnLIW4ZYwwh1IwxmqApWg4ojfjP7bE5qCWQUwq+KNIIP0
+            6CrHIc0CgYEAh7A9UevKT1ICgJsvgEo5LrvyNFXTWr8LfcJII07cE1ks6cjuhSLe
+            iQbn1OGBx+edUUZ/y8Byz1JWNG8hWODOcQmqvNksnHO8eU5pTUyPepxdLlV2/zoO
+            sqVkGuCpK42iW4zoyY4/vFc/myXEa8B0cTKbAh8997zGGYn6DsXgUK0=
+            -----END RSA PRIVATE KEY-----
+
+server:
+  port: 8888
+logging:
+  level:
+    root: INFO

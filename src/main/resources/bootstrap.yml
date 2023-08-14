@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: 'spring-cloud-config-server'
+  cloud:
+    config:
+      server:
+        # Before Spring Cloud 2020.0, to support client side decrypt, the spring.cloud.encrypt.enable:false is mandatory here.
+        encrypt:
+          enabled: false
